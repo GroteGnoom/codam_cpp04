@@ -20,10 +20,18 @@ Cat::Cat(const Cat& cat) {
 
 Cat &Cat::operator=(const Cat& cat) {
 	type = cat.getType();
-	brain = new Brain;
+	brain = new Brain(*cat.brain);
 	return *this;
 }
 
 void Cat::makeSound() const {
 	std::cout << "Meow!" << std::endl;
+}
+
+void Cat::setIdea(int index, std::string idea) {
+	brain->setIdea(index, idea);
+}
+
+std::string Cat::getIdea(int index) {
+	return brain->getIdea(index);
 }

@@ -11,6 +11,10 @@ class Dog : public Animal {
 		Dog &operator=(const Dog& dog);
 		//https://stackoverflow.com/questions/2957984/why-i-have-to-redeclare-a-virtual-function-while-overriding-c/2958064#2958064
 		void makeSound() const;
+		void setIdea(int index, std::string idea);
+		std::string getIdea(int index);
+	private:
+		Brain *brain;
 };
 
 #endif

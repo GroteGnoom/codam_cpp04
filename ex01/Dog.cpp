@@ -23,10 +23,18 @@ Dog::Dog(const Dog& dog) {
 
 Dog &Dog::operator=(const Dog& dog) {
 	type = dog.getType();
-	brain = new Brain;
+	brain = new Brain(*dog.brain);
 	return *this;
 }
 
 void Dog::makeSound() const {
 	std::cout << "Woof!" << std::endl;
+}
+
+void Dog::setIdea(int index, std::string idea) {
+	brain->setIdea(index, idea);
+}
+
+std::string Dog::getIdea(int index) {
+	return brain->getIdea(index);
 }

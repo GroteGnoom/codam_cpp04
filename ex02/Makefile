@@ -1,4 +1,4 @@
-NAME = abstract
+NAME = brain
 SRC = main.cpp Dog.cpp Animal.cpp Cat.cpp Brain.cpp
 INC = Dog.hpp Animal.hpp Cat.hpp Brain.hpp
 

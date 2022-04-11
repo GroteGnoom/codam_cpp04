@@ -29,10 +29,3 @@ void Animal::makeSound() const {
 	std::cout << "Bleeeh!" << std::endl;
 }
 
-void Animal::setIdea(int index, std::string idea) {
-	brain->setIdea(index, idea);
-}
-
-void Animal::getIdea(int index) {
-	std::cout << "Thinking of " << brain->getIdea(index) << std::endl;
-}
