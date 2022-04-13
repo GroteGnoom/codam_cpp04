@@ -35,6 +35,8 @@ int main() {
 	me->equip(tmp);
 	tmp = src->createMateria("cure");
 	me->equip(tmp);
+	tmp = src->createMateria("banana");
+	me->equip(tmp);
 
 	std::cout << "-------using stuff on bob-------------" << std::endl;
 
@@ -45,6 +47,7 @@ int main() {
 	std::cout << "-------unequipping-------------" << std::endl;
 
 	me->unequip(0);
+	me->unequip(2);
 
 	std::cout << "-------deleting -------------" << std::endl;
 
