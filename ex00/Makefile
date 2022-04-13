@@ -1,6 +1,6 @@
 NAME = polymorphism
-SRC = main.cpp Dog.cpp Animal.cpp Cat.cpp
-INC = Dog.hpp Animal.hpp Cat.hpp
+SRC = main.cpp Dog.cpp Animal.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp
+INC = Dog.hpp Animal.hpp Cat.hpp WrongAnimal.hpp WrongCat.hpp
 
 ifdef DEBUG
 	CC=clang++
